@@ -1,0 +1,13 @@
+dependencies:
+- name: elasticsearch 
+  repository: "file://../charts"
+  condition: elasticsearch.enabled
+- name: kibana
+  repository: "file://../charts"
+  condition: kibana.enabled
+- name: filebeat
+  repository: "file://../charts"
+  condition: filebeat.enabled
+- name: elasticsearch-curator 
+  repository: "file://../charts"
+  condition: elasticsearch-curator.enabled
